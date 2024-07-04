@@ -1,22 +1,14 @@
-import java.util.Scanner;
-
 public class Palindrome {
-    public static void main(String[] args) {
-     //int i = 10;
-     Scanner s = new Scanner(System.in);
-     System.out.print("Enter a integer: ");
-     int i = s.nextInt();
-     if (checker(i)==i){
-        System.out.println("palindrome");
+     public boolean isPalind(int i){
+     if (palin(i)==i){
+         return true;
        }
-        else{
-        System.out.println("not palindrome");
+        else {
+         return false;
      }
-    // System.out.print(checker(i));
-     s.close();       
-    }       
+    }
 
-    static int checker(int n){
+    int palin(int n){
         int tmp=n;
         int s=0;
         if (n!=0){
